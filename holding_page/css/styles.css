@@ -1,53 +1,336 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Theme Name :  
+	Version    :  
+	Author     :  
+	Author URI :  
+
+====================================================
+
+	TOC
+	
+	1. PRIMARY STYLES
+	2. COMMONS FOR PAGE DESIGN
+		JQUERY LIGHT BOX
+	3. MAIN SECTION
+		TIME COUNTDOWN
+		SOCIAL BTN
+		
+====================================================
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
 html {
+	font-size: 100%;
 	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+	touch-action: manipulation;
 }
 
-.bgimg {
-	/* Background image */
-	background-image: url("images/background_large@2x.png");
-	/* Full-screen */
+body {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	width: 100%;
 	height: 100%;
-	/* Center the background image */
-	background-position: center;
-	/* Scale and zoom in the image */
-	background-size: cover;
-	/* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-	position: relative;
-	/* Add a white text color to all elements inside the .bgimg container */
-	color: white;
-	/* Add a font */
-	font-family: "Courier New", Courier, monospace;
-	/* Set the font-size to 25 pixels */
-	font-size: 25px;
+	margin: 0;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	color: #333333;
 }
 
-/* Position text in the top-left corner */
-.topleft {
-	position: absolute;
-	top: 0;
-	left: 16px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+span,
+li,
+img,
+inpot,
+button {
+	margin: 0;
+	padding: 0;
 }
 
-/* Position text in the bottom-left corner */
-.bottomleft {
-	position: absolute;
-	bottom: 0;
-	left: 16px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.5;
+	font-weight: inherit;
 }
 
-/* Position text in the middle */
-.middle {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+h1,
+h2,
+h3 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+}
+
+p {
+	line-height: 1.6;
+	font-size: 1.05em;
+	font-weight: 400;
+	color: #636568;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1;
+	font-weight: 600;
+}
+h2 {
+	font-size: 2em;
+	line-height: 1.1;
+}
+h3 {
+	font-size: 1.8em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+
+a,
+button {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.3s;
+	line-height: 1;
+}
+
+a:focus,
+a:active,
+a:hover,
+button:focus,
+button:active,
+button:hover,
+a b.light-color:hover {
+	text-decoration: none;
+	color: #0066b5;
+}
+
+b {
+	font-weight: 500;
+}
+
+img {
+	width: 100%;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+button {
+	outline: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+b.light-color {
+	color: #444;
+}
+
+.icon {
+	font-size: 1.1em;
+	display: inline-block;
+	line-height: inherit;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	line-height: inherit;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+/* ---------------------------------
+2. COMMONS FOR PAGE DESIGN
+--------------------------------- */
+
+.center-text {
 	text-align: center;
 }
 
-/* Style the <hr> element */
-hr {
-	margin: auto;
-	width: 40%;
+.display-table {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.display-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+::-webkit-input-placeholder {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+
+::-moz-placeholder {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+
+:-ms-input-placeholder {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+
+:-moz-placeholder {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.position-static {
+	position: static;
+}
+
+.font-white {
+	color: #ffffff;
+}
+.font-darkgrey {
+	color: #333333;
+}
+
+/* ---------------------------------
+3. MAIN SECTION
+--------------------------------- */
+
+.main-area-wrapper {
+	height: 100%;
+	padding: 15px;
+	background: #dbdbdb;
+}
+
+.main-area {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	padding: 0 20px;
+	background-size: cover;
+	box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
+	color: #333333;
+}
+
+.main-area:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	/* opacity: 0.4; */
+	background: #fff;
+}
+
+.main-area .desc {
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+/* .main-area .notify-btn {
+	margin: 20px 0 50px;
+	padding: 13px 35px;
+	border-radius: 50px;
+	border: 2px solid #f84982;
+	color: #fff;
+	background: #f84982;
+} 
+
+.main-area .notify-btn:hover {
+	background: none;
+}
+*/
+
+/* SOCIAL BTN */
+
+.main-area .social-btn {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main-area .social-btn .list-heading {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.main-area .social-btn > li > a > i {
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	border-radius: 40px;
+	font-size: 1.04em;
+	margin: 0 5px;
+}
+
+.main-area .social-btn > li > a > i:hover {
+	background: #fff !important;
+}
+
+.main-area .social-btn > li > a > i[class*="facebook"] {
+	background: #2a61d6;
+}
+.main-area .social-btn > li > a > i[class*="twitter"] {
+	background: #3aa4f8;
+}
+.main-area .social-btn > li > a > i[class*="google"] {
+	background: #0066b5;
+}
+.main-area .social-btn > li > a > i[class*="instagram"] {
+	background: #8f614a;
+}
+.main-area .social-btn > li > a > i[class*="pinterest"] {
+	background: #e1c013;
 }
