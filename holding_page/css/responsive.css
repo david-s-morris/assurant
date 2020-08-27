@@ -6,11 +6,18 @@
 /* Screens Resolution : 992px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
+	.logo .responsiveimg {
+		width: 18vw;
+	}
 }
 
 /* Screens Resolution : 767px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
+	.logo .responsiveimg {
+		width: 28vw;
+	}
+
 	/* ---------------------------------
 	1. PRIMARY STYLES
 	--------------------------------- */
@@ -36,66 +43,75 @@
 	--------------------------------- */
 
 	.main-area-wrapper {
-		padding: 0px;
+		padding: 10px;
 	}
-
-	/* TIME COUNTDOWN */
-
-	#normal-countdown .time-sec {
-		height: 70px;
-		width: 70px;
-		margin: 5px;
+	.main-area {
+		height: calc(100vh - 185px);
 	}
-
-	#normal-countdown .time-sec .main-time {
-		line-height: 55px;
-		font-size: 1.8em;
-	}
-
-	#normal-countdown .time-sec span {
-		bottom: 12px;
+	footer {
+		height: 165px;
+		margin-top: 10px;
 	}
 }
 
 /* Screens Resolution : 479px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 479px) {
+	.logo {
+		margin: 2em 0 4em 0;
+	}
+	.logo .responsiveimg {
+		width: 45vw;
+	}
 	/* ---------------------------------
 	1. PRIMARY STYLES
 	--------------------------------- */
 
 	body {
-		font-size: 12px;
+		font-size: 16px;
 	}
 
 	/* ---------------------------------
 	3. MAIN SECTION
 	--------------------------------- */
 
-	/* TIME COUNTDOWN */
-
-	#normal-countdown .time-sec {
-		height: 60px;
-		width: 60px;
-		margin: 5px;
+	.main-area {
+		height: calc(100vh - 215px);
 	}
-
-	#normal-countdown .time-sec .main-time {
-		line-height: 45px;
-		font-size: 1.5em;
-	}
-
-	#normal-countdown .time-sec span {
-		font-size: 0.85em;
+	footer {
+		height: 195px;
+		margin-top: 10px;
+		padding: 25px 15px;
 	}
 }
 
 /* Screens Resolution : 359px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 359px) {
+	.logo {
+		margin: 2em 0 2em 0;
+	}
+	.logo .responsiveimg {
+		width: 50vw;
+	}
+	.main-area {
+		height: calc(100vh - 210px);
+	}
+	footer {
+		height: 190px;
+	}
 }
 
 /* Screens Resolution : 290px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 290px) {
+	.logo .responsiveimg {
+		width: 50vw;
+	}
+	.main-area {
+		height: calc(100vh - 190px);
+	}
+	footer {
+		height: 155px;
+	}
 }

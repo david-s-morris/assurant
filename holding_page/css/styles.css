@@ -95,6 +95,7 @@ h1 {
 	font-size: 2.5em;
 	line-height: 1;
 	font-weight: 600;
+	margin-bottom: 1em;
 }
 h2 {
 	font-size: 2em;
@@ -135,7 +136,7 @@ a b.light-color:hover {
 }
 
 b {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 img {
@@ -197,11 +198,19 @@ html {
 	display: table;
 	height: 100%;
 	width: 100%;
+	padding-bottom: 10vh;
 }
 
 .display-table-cell {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.logo {
+	margin: 2em 0 6em 0;
+}
+.logo .responsiveimg {
+	width: 15vw;
 }
 
 ::-webkit-input-placeholder {
@@ -257,6 +266,8 @@ html {
 	background-size: cover;
 	box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
 	color: #333333;
+	height: calc(100vh - 145px);
+	border-radius: 5px;
 }
 
 .main-area:after {
@@ -267,28 +278,21 @@ html {
 	left: 0;
 	right: 0;
 	z-index: -1;
-	/* opacity: 0.4; */
-	background: #fff;
 }
-
+footer {
+	padding: 30px 15px;
+	font-size: 0.8rem;
+	height: 115px;
+	margin-top: 15px;
+	background: #333333;
+	text-align: center;
+	margin-left: -15px;
+	margin-right: -15px;
+}
 .main-area .desc {
 	margin: 20px auto;
 	max-width: 500px;
 }
-
-/* .main-area .notify-btn {
-	margin: 20px 0 50px;
-	padding: 13px 35px;
-	border-radius: 50px;
-	border: 2px solid #f84982;
-	color: #fff;
-	background: #f84982;
-} 
-
-.main-area .notify-btn:hover {
-	background: none;
-}
-*/
 
 /* SOCIAL BTN */
 
