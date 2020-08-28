@@ -7,7 +7,18 @@
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
 	.logo .responsiveimg {
-		width: 18vw;
+		width: 24vw;
+	}
+	.main-area-wrapper {
+		padding: 10px;
+	}
+	.main-area {
+		height: calc(100vh - 210px);
+		background-image: url("../images/background_small@2x.jpg");
+	}
+	footer {
+		height: 190px;
+		margin-top: 10px;
 	}
 }
 
