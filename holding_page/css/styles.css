@@ -250,7 +250,7 @@ html {
 --------------------------------- */
 
 .main-area-wrapper {
-	height: 100%;
+	height: calc(var(--vh, 1vh) * 100);
 	padding: 15px;
 	background: #dbdbdb;
 }
@@ -259,7 +259,7 @@ html {
 	position: relative;
 	z-index: 1;
 	height: 100%;
-	padding: 0 20px;
+	padding: 0 25px;
 	background-size: cover;
 	background-position: center center;
 	box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
