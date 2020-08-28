@@ -4,11 +4,11 @@
 	.main-area {
 		/* height: calc(100vh - 222px); */
 		background-image: url("../images/background_large@2x.jpg");
-		height: 80%;
+		height: 82%;
 	}
 	footer {
 		/* height: 126px; */
-		height: 20%;
+		height: 18%;
 		margin-top: 15px;
 	}
 
