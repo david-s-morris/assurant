@@ -264,7 +264,8 @@ html {
 	background-position: center center;
 	box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
 	color: #333333;
-	height: calc(100vh - 145px);
+	/* height: calc(100vh - 145px); */
+	height: 85%;
 	border-radius: 5px;
 	background-image: url("../images/background_large@2x.jpg");
 }
@@ -281,7 +282,8 @@ html {
 footer {
 	padding: 30px 15px;
 	font-size: 0.8rem;
-	height: 115px;
+	/* height: 115px; */
+	height: 15%;
 	margin-top: 15px;
 	background: #333333;
 	text-align: center;
