@@ -47,6 +47,7 @@
 	}
 	.main-area {
 		height: calc(100vh - 185px);
+		background-image: url("../images/background_small@2x.jpg");
 	}
 	footer {
 		height: 165px;
