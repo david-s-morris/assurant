@@ -116,10 +116,12 @@
 		width: 50vw;
 	}
 	.main-area {
-		height: 68%;
+		height: 65%;
 	}
 	footer {
-		height: 32%;
+		height: 35%;
+		font-size: 12px;
+		padding: 15px 15px;
 	}
 }
 
