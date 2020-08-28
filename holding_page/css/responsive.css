@@ -1,6 +1,14 @@
 /* Screens Resolution : 992px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
+	.main-area {
+		height: calc(100vh - 232px);
+		background-image: url("../images/background_large@2x.jpg");
+	}
+	footer {
+		height: 148px;
+		margin-top: 10px;
+	}
 }
 
 /* Screens Resolution : 992px
