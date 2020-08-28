@@ -96,11 +96,11 @@
 	--------------------------------- */
 
 	.main-area {
-		height: 82%;
+		height: 75%;
 		background-image: url("../images/background_small@2x.jpg");
 	}
 	footer {
-		height: 18%;
+		height: 25%;
 		margin-top: 10px;
 		padding: 25px 15px;
 	}
@@ -116,10 +116,10 @@
 		width: 50vw;
 	}
 	.main-area {
-		height: 82%;
+		height: 75%;
 	}
 	footer {
-		height: 18%;
+		height: 25%;
 	}
 }
 
