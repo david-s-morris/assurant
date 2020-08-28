@@ -2,11 +2,13 @@
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
 	.main-area {
-		height: calc(100vh - 222px);
+		/* height: calc(100vh - 222px); */
 		background-image: url("../images/background_large@2x.jpg");
+		height: 80vh;
 	}
 	footer {
-		height: 126px;
+		/* height: 126px; */
+		height: calc(20vh - 30px);
 		margin-top: 15px;
 	}
 }
