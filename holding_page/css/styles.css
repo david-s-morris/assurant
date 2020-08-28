@@ -3,9 +3,8 @@
 
 * 	[Master Stylesheet]
 	
-	Theme Name :  
-	Version    :  
-	Author     :  
+	Version    :  1.0
+	Author     :  David Morris
 	Author URI :  
 
 ====================================================
@@ -16,8 +15,6 @@
 	2. COMMONS FOR PAGE DESIGN
 		JQUERY LIGHT BOX
 	3. MAIN SECTION
-		TIME COUNTDOWN
-		SOCIAL BTN
 		
 ====================================================
 
@@ -294,49 +291,4 @@ footer {
 .main-area .desc {
 	margin: 20px auto;
 	max-width: 500px;
-}
-
-/* SOCIAL BTN */
-
-.main-area .social-btn {
-	position: absolute;
-	bottom: 30px;
-	width: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.main-area .social-btn .list-heading {
-	display: block;
-	margin-bottom: 15px;
-}
-
-.main-area .social-btn > li > a > i {
-	display: inline-block;
-	height: 35px;
-	width: 35px;
-	line-height: 35px;
-	border-radius: 40px;
-	font-size: 1.04em;
-	margin: 0 5px;
-}
-
-.main-area .social-btn > li > a > i:hover {
-	background: #fff !important;
-}
-
-.main-area .social-btn > li > a > i[class*="facebook"] {
-	background: #2a61d6;
-}
-.main-area .social-btn > li > a > i[class*="twitter"] {
-	background: #3aa4f8;
-}
-.main-area .social-btn > li > a > i[class*="google"] {
-	background: #0066b5;
-}
-.main-area .social-btn > li > a > i[class*="instagram"] {
-	background: #8f614a;
-}
-.main-area .social-btn > li > a > i[class*="pinterest"] {
-	background: #e1c013;
 }
