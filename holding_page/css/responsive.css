@@ -13,7 +13,7 @@
 		padding: 10px;
 	}
 	.main-area {
-		height: calc(100vh - 225px);
+		height: calc(100vh - 235px);
 		background-image: url("../images/background_small@2x.jpg");
 	}
 	footer {
