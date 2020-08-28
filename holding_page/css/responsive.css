@@ -126,6 +126,10 @@
 /* Screens Resolution : 290px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 290px) {
+	body {
+		font-size: 14px;
+	}
+
 	.logo .responsiveimg {
 		width: 50vw;
 	}
@@ -134,5 +138,6 @@
 	}
 	footer {
 		height: 35%;
+		font-size: 12px;
 	}
 }
